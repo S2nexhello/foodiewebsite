@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Urbanist:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Josefin, sans-serif;
+}
+
+.common-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01;
+}
+
+.common-title {
+    margin-bottom: 2.2rem;
+}
+
+
+:root{
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary:#1c1c1c;
+    --bs-main-color:#fff;
+    --bs-primary-color:#c6c6c6;
+    --secondary-color: #29a9fd;
+    --bs-supporting-color: #C850C0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Urbanist,sans-serif;
+    color: var(--bs-dark-color);
+}
+
+h1 {
+    font-size: 3.3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1 rem;
+    letter-spacing: 0.07rem;
+    line-height: 2rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    color: var(--bs-dark-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* hero-section */
+
+.hero-section .container {
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+
+.bg-main {
+    height: 82vh;
+    position: relative;
+}
+
+.bg-color {
+    background-color: var(--bs-dark-primary);
+}
+
+.hero-video--section {
+    width: 25rem;
+    border-radius: 40px;
+
+}
+
+.nav-link {
+    color: var(--bs-primary-color);
+}
+.nav-link:hover {
+    color: var(--bs-main-color);
+}
+
+.text-light-grey {
+    color: var(--bs-primary-color);
+}
+
+button, a {
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    font-size: 1.15rem !important;
+}
+
+.custom-shape-divider-bottom-1704560084 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704560084 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1704560084 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* service-section */
+
+.service-section {
+    padding: 3rem 0 3rem 0;
+}
+
+.icon-span {
+    background-color: var(--secondary-color);
+    color: var(--bs-main-color);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon-span{
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.icon-span:hover {
+    transform: translateY(-10px);
+  }
+
+.card-box {
+    transition: all 0.1s 0.1s ease-in-out;
+}
+
+.card-box:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important ;
+}
+
+.tech-section {
+    background-image: linear-gradient(rgba(22,22,22,0.6),rgba(22,22,22,0.9)), url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")!important ;
+    background: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    margin-bottom: 2rem;
+}
+
+.tech-section .img-section img {
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.service-section .container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.service-section .container .card:hover
+{
+    height: 480px;
+}
+.service-section .container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.service-section .container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.service-section .container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.service-section .container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .service-section .container .card .imgContainer{
+        left: -2px;
+    }
+}
+
+
+
+
+.card-section .card{
+    background-color: #262631;
+    color: var(--bs-main-color);
+}
+.card-section .card p{
+    color: var(--bs-main-color);
+}
+.card-section .card h5{
+    color: var(--bs-main-color);
+}
+.card-section:hover .card{
+    background-color: var(--bs-main-color);
+    color: var(--bs-dark-color);
+    transition: all 0.3s linear;
+}
+.card-section:hover .card p{
+    color: var(--bs-dark-color);
+    transition: all 0.3s linear;
+}
+.card-section:hover .card h5{
+    color: var(--bs-dark-color);
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.card-section .card{
+    padding: 15px;
+}
+
+.carousel-indicators {
+    bottom: -54px !important;
+   
+}
+
+.carousel-indicators [data-bs-target] {
+     height: 0.6rem;
+    width: 0.6rem;
+}
+
+
+.contact-section {
+    position: relative;
+}
+
+.contact-section .form-section {
+    width: 50%;
+}
+
+.footer-section .fimage-section{
+    background-color: #29a9fd;
+}
+
+.icon-foot {
+    height: 6rem;
+    width: 6rem;
+}
+
+.footer-section {
+    padding: 0 0 4rem 0;
+}
+
+.contact-div {
+    background-color: #251f1f;
+}
+
+.input-group-text {
+    background-color: blue;
+    color: var(--bs-main-color);
+}
+
+@media screen and (max-width: 998px) {
+    .navbar-toggler {
+        border-color: var(--bs-main-color);
+    }
+
+    .navbar-toggler-icon {
+        color: var(--bs-main-color);
+        background-color: var(--bs-main-color);
+    }
+
+    .common-heading {
+        font-size: 2rem;
+    }
+
+
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        height: 100vh;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-video--section{
+        width: 20rem;
+    }
+}
+
+
+
+
+
+
+
+
+.custom-shape-divider-top-1704801622 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1704801622 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1704801622 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.footer-section a{
+    font-size:small !important;
+    color: #FFFFFF;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.bg-theme {
+    color: skyblue;
+    font-weight: bolder;
+}
+
